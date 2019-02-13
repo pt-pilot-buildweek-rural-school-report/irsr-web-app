@@ -1,0 +1,21 @@
+.navBar{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 25%;
+    justify-content: center;
+    background-color: #222629;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.navBar ul{
+    width: 100%;
+}
+.navBar ul li{
+  
+   border-bottom: none;
+    list-style: none;
+    color: darkslategrey;
+    margin: 25px 0 25px 0;
+    padding: 25px;
+}
