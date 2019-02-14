@@ -44,8 +44,8 @@ class IssueForm extends Component {
                     onChange={this.handleChange}
                     value={this.state.newIssue.issue}
                 />
-                <input
-                            type = "text"
+                <textarea
+                           
                             name = "description"
                             placeholder = "Description"
                             onChange = {this.handleChange}
