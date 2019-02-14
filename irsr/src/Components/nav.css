@@ -1,4 +1,4 @@
-.navBar{
+.navBar {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -8,22 +8,34 @@
     height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
-.navBar div{
-    width: 100%;
+
+.navBar div {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
 }
-.navLinkWrapper{
+.navBar h2{
+    color: #ebf0f0;
+    position: relative;
+    bottom: 100px;
+}
+
+.navBar .navLinkWrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
-.navBar div a{
-  
-   border-bottom: none;
+
+.navBar a {
+    border-bottom: none;
     text-decoration: none;
     color: darkslategrey;
     margin: 25px 0 25px 0;
     padding: 25px;
+}
+
+.fas {
+    position: relative;
+    top: 54px;
 }
