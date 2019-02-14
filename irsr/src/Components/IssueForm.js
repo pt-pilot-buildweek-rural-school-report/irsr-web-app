@@ -6,7 +6,7 @@ class IssueForm extends Component {
             name: '',
             date: '',
             issue: '',
-            discription: ''
+            description: ''
         }
     }
 
@@ -45,13 +45,12 @@ class IssueForm extends Component {
                     value={this.state.newIssue.issue}
                 />
                 <textarea
-                           
-                            name = "description"
-                            placeholder = "Description"
-                            onChange = {this.handleChange}
-                            value = {this.state.newIssue.discription}
-                            />
-                            <button>Submit</button>
+                    name="description"
+                    placeholder="Description"
+                    onChange={this.handleChange}
+                    value={this.state.newIssue.description}
+                />
+                <button>Submit</button>
             </form>
 
 
