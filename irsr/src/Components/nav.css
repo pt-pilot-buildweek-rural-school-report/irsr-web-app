@@ -1,0 +1,29 @@
+.navBar{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 25%;
+    justify-content: center;
+    background-color: #222629;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.navBar div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.navLinkWrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.navBar div a{
+  
+   border-bottom: none;
+    text-decoration: none;
+    color: darkslategrey;
+    margin: 25px 0 25px 0;
+    padding: 25px;
+}
