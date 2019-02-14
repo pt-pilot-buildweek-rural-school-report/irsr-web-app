@@ -8,13 +8,21 @@
     height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
-.navBar ul{
+.navBar div{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
-.navBar ul li{
+.navLinkWrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.navBar div a{
   
    border-bottom: none;
-    list-style: none;
+    text-decoration: none;
     color: darkslategrey;
     margin: 25px 0 25px 0;
     padding: 25px;

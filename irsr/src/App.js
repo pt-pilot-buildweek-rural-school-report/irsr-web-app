@@ -4,7 +4,12 @@ import './App.css';
 import Nav from './Components/Nav'
 
 class App extends Component {
-  
+  constructor(){
+    super();
+    this.state = {
+      
+    }
+  }
   render() {
     return (
       <div className="App">
