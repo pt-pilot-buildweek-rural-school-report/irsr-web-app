@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './issueForm.css'
 
 class IssueForm extends Component {
     state = {
@@ -19,9 +20,9 @@ class IssueForm extends Component {
         });
     }
     render() {
-        return (<div className='issueForm'>
+        return (<div className = 'formContainer'>
 
-            <form>
+            <form className='issueForm'>
                 <input
                     type="text"
                     name="name"
