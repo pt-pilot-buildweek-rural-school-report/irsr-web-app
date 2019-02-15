@@ -12,7 +12,7 @@ class IssueForm extends Component {
     }
 
     handleChange = event => {
-        event.preventdefualt();
+    
         this.setState({
             newIssue: {
                 ...this.state.newIssue,
