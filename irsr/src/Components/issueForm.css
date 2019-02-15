@@ -4,6 +4,7 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    
 }
 
 .issueForm{
@@ -15,7 +16,26 @@
     margin-left: 25%;
     border-radius: 10px;
     padding: 20px;
+    background-color: #222629;
 }
 .issueForm input{
+    margin: 25px auto;
+    width: 75%;
+    border-radius: 5px;
+    border: none;
+}
+
+.issueForm textarea{
+    border-radius: 5px;
     margin: 25px;
+    border: none;
+}
+button{
+    width: 25%;
+    padding: 10px;
+    background-color: #80abaa;
+    color: #ebf0f0;
+    border-radius: 5px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
 }

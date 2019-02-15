@@ -22,7 +22,10 @@
 }
 .navLinkWrapper:hover{
     background-color: black;
-    color:#ebf0f0;
+    color:#e27689;
+}
+.navLinkWrapper a:hover{
+    color:white;
 }
 
 .navBar .navLinkWrapper {
