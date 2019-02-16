@@ -20,6 +20,13 @@
     position: relative;
     bottom: 100px;
 }
+.navLinkWrapper:hover{
+    background-color: black;
+    color:#e27689;
+}
+.navLinkWrapper a:hover{
+    color:white;
+}
 
 .navBar .navLinkWrapper {
     display: flex;

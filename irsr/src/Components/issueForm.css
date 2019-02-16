@@ -1,0 +1,41 @@
+.formContainer{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.issueForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid lightgray;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-left: 25%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #222629;
+}
+.issueForm input{
+    margin: 25px auto;
+    width: 75%;
+    border-radius: 5px;
+    border: none;
+}
+
+.issueForm textarea{
+    border-radius: 5px;
+    margin: 25px;
+    border: none;
+}
+button{
+    width: 25%;
+    padding: 10px;
+    background-color: #80abaa;
+    color: #ebf0f0;
+    border-radius: 5px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
