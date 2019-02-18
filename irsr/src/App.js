@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import './App.css';
+import './css/index.css';
 import Nav from './Components/Nav'
 import IssueForm from './Components/IssueForm'
 import Login from './Components/Login'
@@ -17,8 +17,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route exact path="/" render={props =><Login {...props}/>}/>
-        <Route path="/home" component={Nav} />
+        {/* <Route exact path="/" render={props =><Login {...props}/>}/> */}
+        <Route path="/" component={Nav} />
         <Route exact path="/home/issueform" component={IssueForm} />
 
       </div>
