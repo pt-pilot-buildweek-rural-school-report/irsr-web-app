@@ -3,6 +3,8 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import Nav from './Components/Nav'
 import IssueForm from './Components/IssueForm'
+import Login from './Components/Login'
+
 
 class App extends Component {
   constructor() {
@@ -15,9 +17,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route path="/" component={Nav} />
-        <Route exact path="/issueform" component={IssueForm} />
-        
+        <Route exact path="/" render={props =><Login {...props}/>}/>
+        <Route path="/home" component={Nav} />
+        <Route exact path="/home/issueform" component={IssueForm} />
+
       </div>
     );
   }

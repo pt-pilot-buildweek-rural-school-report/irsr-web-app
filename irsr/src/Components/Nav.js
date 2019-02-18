@@ -9,11 +9,11 @@ const Nav = (props) => {
             <div>
                 <div className = "navLinkWrapper">
                 <i class="fas fa-th"></i>
-                <Link to = {'/'}>Issues</Link>
+                <Link to = {'/home'}>Issues</Link>
                 </div>
                 <div className = "navLinkWrapper">
                 <i class="fas fa-pen-square"></i>
-                <Link to = {'/issueform'}>New Issue</Link>
+                <Link to = {'/home/issueform'}>New Issue</Link>
                 </div>
                 <div className = "navLinkWrapper">
                 <i className="fas fa-sign-in-alt"></i>
