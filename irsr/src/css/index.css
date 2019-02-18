@@ -223,7 +223,6 @@ code {
 @media (max-width: 500px) {
   .formContainer {
     width: 100%;
-    margin: auto;
   }
 }
 .issueForm {
@@ -247,6 +246,17 @@ code {
   border-radius: 5px;
   margin: 25px;
   border: none;
+}
+.issueForm label {
+  color: #ebf0f0;
+  padding: 5px;
+}
+.issueForm label select {
+  color: black;
+  border: none;
+  border-radius: 5px;
+  width: 25%;
+  margin: 10px;
 }
 .issueForm button {
   width: 25%;
