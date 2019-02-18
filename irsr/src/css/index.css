@@ -191,16 +191,26 @@ code {
 .navBarWrapper .navBar a:hover {
   color: white;
 }
-.navBarWrapper .fas {
+.navBarWrapper .menuIcon {
   position: relative;
   top: 54px;
 }
-.navBarWrapper .fa-bars {
+.navBarWrapper .barsButton {
   display: none;
 }
+.navBarWrapper .barsButton .fa-bars {
+  color: #ebf0f0;
+  margin: auto;
+}
 @media (max-width: 500px) {
-  .navBarWrapper .fa-bars {
+  .navBarWrapper .barsButton {
     display: inline-block;
+    background-color: #222629;
+    z-index: 1000;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+    margin: 25px;
   }
 }
 .formContainer {
@@ -209,6 +219,12 @@ code {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .formContainer {
+    width: 100%;
+    margin: auto;
+  }
 }
 .issueForm {
   display: flex;
