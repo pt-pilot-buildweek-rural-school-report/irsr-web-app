@@ -1,49 +1,59 @@
-.navBar {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+.navBarWrapper {
     width: 25%;
-    justify-content: center;
-    background-color: #222629;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
 
-    div {
+    .navBar {
         display: flex;
         flex-direction: column;
         align-content: center;
+        width: 100%;
         justify-content: center;
+        background-color: #222629;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        @media @mobile {
+            display: none;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+        h2 {
+            color: #ebf0f0;
+            position: relative;
+            bottom: 100px;
+        }
+        .navLinkWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            &:hover {
+                background-color: black;
+                color: #e27689;
+            }
+        }
+        a {
+            border-bottom: none;
+            text-decoration: none;
+            color: darkslategrey;
+            margin: 25px 0 25px 0;
+            padding: 25px;
+            &:hover {
+                color: white;
+            }
+        }
     }
-
-    h2{
-        color: #ebf0f0;
+    .fas {
         position: relative;
-        bottom: 100px;
+        top: 54px;
     }
-    .navLinkWrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
 
-        &:hover{
-            background-color: black;
-            color:#e27689;
+    .fa-bars{
+        display: none;
+
+        @media @mobile{
+            display: inline-block;
         }
     }
-    a {
-        border-bottom: none;
-        text-decoration: none;
-        color: darkslategrey;
-        margin: 25px 0 25px 0;
-        padding: 25px;
-
-        &:hover{
-            color:white;
-        }
-    }
-    
-}
-.fas {
-    position: relative;
-    top: 54px;
 }

@@ -139,52 +139,69 @@ code {
 .App {
   width: 100%;
   display: flex;
+  height: 100vh;
   text-align: center;
   background-color: #ebf0f0;
 }
-.navBar {
+.navBarWrapper {
+  width: 25%;
+}
+.navBarWrapper .navBar {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 25%;
+  width: 100%;
   justify-content: center;
   background-color: #222629;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
-.navBar div {
+@media (max-width: 500px) {
+  .navBarWrapper .navBar {
+    display: none;
+  }
+}
+.navBarWrapper .navBar div {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
 }
-.navBar h2 {
+.navBarWrapper .navBar h2 {
   color: #ebf0f0;
   position: relative;
   bottom: 100px;
 }
-.navBar .navLinkWrapper {
+.navBarWrapper .navBar .navLinkWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.navBar .navLinkWrapper:hover {
+.navBarWrapper .navBar .navLinkWrapper:hover {
   background-color: black;
   color: #e27689;
 }
-.navBar a {
+.navBarWrapper .navBar a {
   border-bottom: none;
   text-decoration: none;
   color: darkslategrey;
   margin: 25px 0 25px 0;
   padding: 25px;
 }
-.navBar a:hover {
+.navBarWrapper .navBar a:hover {
   color: white;
 }
-.fas {
+.navBarWrapper .fas {
   position: relative;
   top: 54px;
+}
+.navBarWrapper .fa-bars {
+  display: none;
+}
+@media (max-width: 500px) {
+  .navBarWrapper .fa-bars {
+    display: inline-block;
+  }
 }
 .formContainer {
   width: 75%;

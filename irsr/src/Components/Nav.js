@@ -4,11 +4,13 @@ import {Link} from 'react-router-dom';
 
 const Nav = (props) => {
     return (
+        <div className = 'navBarWrapper'>
+        <i class="fas fa-bars"></i>
         <nav className="navBar">
             <h2>International Rual School Report</h2>
             <div>
                 <div className = "navLinkWrapper">
-                <i class="fas fa-th"></i>
+                <a class="fas fa-th"></a>
                 <Link to = {'/home'}>Issues</Link>
                 </div>
                 <div className = "navLinkWrapper">
@@ -21,6 +23,7 @@ const Nav = (props) => {
                 </div>
             </div>
         </nav>
+        </div>
     );
 }
 
