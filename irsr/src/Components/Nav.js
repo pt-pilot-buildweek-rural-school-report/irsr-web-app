@@ -23,7 +23,7 @@ const Nav = (props) => {
                     </div>
                     <div className="navLinkWrapper">
                         <i className="fas fa-sign-in-alt menuIcon"></i>
-                        <a>Log Out</a>
+                        <a href = '#'>Log Out</a>
                     </div>
                 </div>
             </nav>

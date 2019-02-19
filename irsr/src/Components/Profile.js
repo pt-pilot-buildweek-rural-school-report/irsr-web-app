@@ -1,10 +1,14 @@
 import React from 'react';
+import someDude from '../images/someDude.jpeg';
 
 const Profile = (props) => {
     return ( 
-        <div>
+        <div className = "profileContainer">
             <h2>Welcome back User! You have X issues to review</h2>
-            <img src = './images/someDude.jpeg' alt= 'user profile picture'/>
+            <div className = 'profilePicture'>
+            <img src = {someDude} alt= 'user' />
+            </div>
+            
         </div>
      );
 }

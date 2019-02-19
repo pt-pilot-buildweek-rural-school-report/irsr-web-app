@@ -171,6 +171,7 @@ code {
   color: #ebf0f0;
   position: relative;
   bottom: 35px;
+  font-size: 1.5vw;
 }
 .navBarWrapper .navBar .navLinkWrapper {
   display: flex;
@@ -266,4 +267,25 @@ code {
   border-radius: 5px;
   margin: auto;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.25vw;
+}
+.profileContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 75%;
+}
+.profileContainer .profilePicture {
+  border-radius: 200px;
+  width: 100px;
+  overflow: hidden;
+  border: 2px solid #222629;
+}
+.profileContainer .profilePicture img {
+  width: 150px;
+}
+@media (max-width: 500px) {
+  .profileContainer .profilePicture img {
+    width: 100px;
+  }
 }
