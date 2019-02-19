@@ -10,6 +10,10 @@ const Nav = (props) => {
                 <h2>International Rual School Report</h2>
                 <div>
                     <div className="navLinkWrapper">
+                        <i class="far fa-user menuIcon"></i>
+                        <Link to={'/home/profile'}>Profile</Link>
+                    </div>
+                    <div className="navLinkWrapper">
                         <i class="fas fa-th menuIcon"></i>
                         <Link to={'/home'}>Issues</Link>
                     </div>

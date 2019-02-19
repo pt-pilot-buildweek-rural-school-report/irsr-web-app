@@ -170,7 +170,7 @@ code {
 .navBarWrapper .navBar h2 {
   color: #ebf0f0;
   position: relative;
-  bottom: 100px;
+  bottom: 35px;
 }
 .navBarWrapper .navBar .navLinkWrapper {
   display: flex;
