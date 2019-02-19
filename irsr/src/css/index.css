@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.App {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  background-color: #ebf0f0;
+}
+.navBarWrapper {
+  width: 25%;
+}
+.navBarWrapper .navBar {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  justify-content: center;
+  background-color: #222629;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 500px) {
+  .navBarWrapper .navBar {
+    display: none;
+  }
+}
+.navBarWrapper .navBar div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.navBarWrapper .navBar h2 {
+  color: #ebf0f0;
+  position: relative;
+  bottom: 35px;
+}
+.navBarWrapper .navBar .navLinkWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navBarWrapper .navBar .navLinkWrapper:hover {
+  background-color: black;
+  color: #e27689;
+}
+.navBarWrapper .navBar a {
+  border-bottom: none;
+  text-decoration: none;
+  color: darkslategrey;
+  margin: 25px 0 25px 0;
+  padding: 25px;
+}
+.navBarWrapper .navBar a:hover {
+  color: white;
+}
+.navBarWrapper .menuIcon {
+  position: relative;
+  top: 54px;
+}
+.navBarWrapper .barsButton {
+  display: none;
+}
+.navBarWrapper .barsButton .fa-bars {
+  color: #ebf0f0;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .navBarWrapper .barsButton {
+    display: inline-block;
+    background-color: #222629;
+    z-index: 1000;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+    margin: 25px;
+  }
+}
+.formContainer {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .formContainer {
+    width: 100%;
+  }
+}
+.issueForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid lightgray;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-left: 25%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #222629;
+}
+.issueForm input {
+  margin: 25px auto;
+  width: 75%;
+  border-radius: 5px;
+  border: none;
+}
+.issueForm textarea {
+  border-radius: 5px;
+  margin: 25px;
+  border: none;
+}
+.issueForm label {
+  color: #ebf0f0;
+  padding: 5px;
+}
+.issueForm label select {
+  color: black;
+  border: none;
+  border-radius: 5px;
+  width: 25%;
+  margin: 10px;
+}
+.issueForm button {
+  width: 25%;
+  padding: 10px;
+  background-color: #80abaa;
+  color: #ebf0f0;
+  border-radius: 5px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}

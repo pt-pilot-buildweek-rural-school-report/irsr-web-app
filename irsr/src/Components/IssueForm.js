@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import './issueForm.css'
+import '../css/index.css';
 
 class IssueForm extends Component {
     state = {
         newIssue: {
             name: '',
             date: '',
-            issue: '',
+            issue_name: '',
+            issue_type: '',
             description: ''
         }
     }
 
     handleChange = event => {
-    
+
         this.setState({
             newIssue: {
                 ...this.state.newIssue,
@@ -21,7 +22,7 @@ class IssueForm extends Component {
         });
     }
     render() {
-        return (<div className = 'formContainer'>
+        return (<div className='formContainer'>
 
             <form className='issueForm'>
                 <input
@@ -41,11 +42,26 @@ class IssueForm extends Component {
 
                 <input
                     type="text"
-                    name="issue"
+                    name="issue_name"
                     placeholder="Issue"
                     onChange={this.handleChange}
-                    value={this.state.newIssue.issue}
+                    value={this.state.newIssue.issue_name}
                 />
+                <label>
+                    Issue Type:
+                     <select
+                        name="issue_type"
+                        value={this.state.newIssue.issue_type}
+                        onChange={this.handleChange}>
+                        <option value='Electrical' >Electrical</option>
+                        <option value='Furniture' >Furniture</option>
+                        <option value='General' >General</option>
+                        <option value='Security' >Security</option>
+                        <option value='Supplies' >Supplies</option>
+                        <option value='Tech' >Tech</option>
+                        <option value='Text Books' >Text Books</option>
+                    </select>
+                </label>
                 <textarea
                     name="description"
                     placeholder="Description"
