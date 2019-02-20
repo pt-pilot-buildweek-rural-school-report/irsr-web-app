@@ -27,7 +27,7 @@ class Nav extends Component {
           <div>
             <div className="navLinkWrapper">
               <i className="far fa-user menuIcon" />
-              <Link to={"/home/profile"}>Profile</Link>
+              <Link to={"/home"}>Profile</Link>
             </div>
             <div className="navLinkWrapper">
               <i className="fas fa-th menuIcon" />
