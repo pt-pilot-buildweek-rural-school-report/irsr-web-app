@@ -10,9 +10,11 @@ class Nav extends Component {
     };
   }
   handleClick = event => {
+    console.log('hi')
     this.setState({
       condition: !this.state.condition
     });
+   
   };
   render() {
     return (

@@ -146,9 +146,6 @@ code {
 .navBarWrapper {
   width: 25%;
 }
-.navBarWrapper .toggled {
-  display: flex;
-}
 .navBarWrapper .navBar {
   display: flex;
   flex-direction: column;
@@ -216,6 +213,9 @@ code {
     width: 25%;
     margin: 25px;
   }
+}
+.navBarWrapper .toggled {
+  display: flex;
 }
 .formContainer {
   width: 75%;

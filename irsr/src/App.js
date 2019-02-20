@@ -18,8 +18,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Route exact path="/" render={props =><Login {...props}/>}/> */}
-        <Route path="/" component={Nav} />
+        <Route exact path="/" render={props =><Login {...props}/>}/>
+        <Route path="/home" component={Nav} />
         <Route exact path = "/home/profile" component = {Profile} />
         <Route exact path="/home/issueform" component={IssueForm} />
 
