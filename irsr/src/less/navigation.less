@@ -12,6 +12,16 @@
         font-family: 'Roboto', sans-serif;
         @media @mobile {
             display: none;
+            width: 100%;
+            z-index: 5000;
+        }
+        .menuButton{
+            display: none;
+            @media @mobile{
+                display: inline-block;
+                border:none;
+                background-color: #222629;
+            }
         }
         div {
             display: flex;
@@ -71,5 +81,8 @@
     }
     .toggled{
         display: flex;
+    }
+    .hidden{
+        display: none;
     }
 }

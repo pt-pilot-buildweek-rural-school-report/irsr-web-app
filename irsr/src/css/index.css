@@ -159,6 +159,18 @@ code {
 @media (max-width: 500px) {
   .navBarWrapper .navBar {
     display: none;
+    width: 100%;
+    z-index: 5000;
+  }
+}
+.navBarWrapper .navBar .menuButton {
+  display: none;
+}
+@media (max-width: 500px) {
+  .navBarWrapper .navBar .menuButton {
+    display: inline-block;
+    border: none;
+    background-color: #222629;
   }
 }
 .navBarWrapper .navBar div {
@@ -216,6 +228,9 @@ code {
 }
 .navBarWrapper .toggled {
   display: flex;
+}
+.navBarWrapper .hidden {
+  display: none;
 }
 .formContainer {
   width: 75%;
@@ -277,6 +292,7 @@ code {
   justify-content: space-around;
   margin: auto;
   width: 75%;
+  z-index: 1;
 }
 .profileContainer .profilePicture {
   border-radius: 200px;

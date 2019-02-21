@@ -19,10 +19,11 @@ class Nav extends Component {
   render() {
     return (
       <div className="navBarWrapper">
-        <button onClick={this.handleClick} className="barsButton">
+        <button onClick={this.handleClick} className={this.state.condition ? "BarsButton hidden" : "BarsButton"}>
           <i className="fas fa-bars" />
         </button>
         <nav className={this.state.condition ? "navBar toggled" : "navBar"}>
+          <button className = 'menuButton' onClick={this.handleClick}><i className="far fa-times-circle"></i></button>  
           <h2>International Rual School Report</h2>
           <div>
             <div className="navLinkWrapper">
