@@ -314,6 +314,12 @@ code {
   justify-content: space-around;
   width: 70%;
 }
+@media (max-width: 500px) {
+  .issueCardContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
 .issueCardContainer .issueCard {
   border: 1px solid #222629;
   display: flex;
@@ -322,4 +328,65 @@ code {
   width: 33%;
   margin: 25px auto;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #222629;
+  padding: 10px;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard {
+    width: 80%;
+    margin: 25px;
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+.issueCardContainer .issueCard h3 {
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard h3 {
+    margin: 2px auto;
+  }
+}
+.issueCardContainer .issueCard h4 {
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard h4 {
+    margin: 2px auto;
+  }
+}
+.issueCardContainer .issueCard p {
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard p {
+    margin: 2px auto;
+  }
+}
+.issueCardContainer .issueCard button {
+  width: 30%;
+  padding: 10px;
+  background-color: #80abaa;
+  color: #ebf0f0;
+  border-radius: 5px;
+  margin: 5px auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25vw;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard button {
+    margin: 2px auto;
+    font-size: 12px;
+  }
 }
