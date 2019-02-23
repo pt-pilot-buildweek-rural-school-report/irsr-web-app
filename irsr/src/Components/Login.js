@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import {connect} from 'react-redux';
 import { loginData } from '../actions';
+import '../css/login.css'
 
 class Login extends Component {
   constructor() {
@@ -15,14 +16,16 @@ class Login extends Component {
 	
 	render() {
 		return (
-			<form onSubmit={this.handleSubmit}>
+			<form className='login' onSubmit={this.handleSubmit}>
 				<div>
+                <h1 className="login-title">Welcome Back!</h1>
 					<input
 						name='username'
 						value={this.state.username}
 						placeholder='username'
 						onChange={this.handleInputChange}
-						type='text'
+                        type='text'
+                        className='login-input'
 					/>
 				</div>
 				<div>
@@ -31,12 +34,14 @@ class Login extends Component {
 						value={this.state.password}
 						placeholder='password'
 						onChange={this.handleInputChange}
-						type='password'
+                        type='password'
+                        className='login-input'
 					/>
 				</div>
 				<div>
-					<button type='submit'>Login</button>
+					<button className='login-button'type='submit'>Login</button>
 				</div>
+                <p class="login-lost"><a href="">Forgot Password?</a></p>
 			</form>
 		)
 	}
