@@ -14,7 +14,7 @@ export const loginData = (loginState) =>{
     }
 }
 export const postIssue = (issue) =>{
-    const newIssue = axios.post('http://localhost:5000/api/login',issue)
+    const newIssue = axios.post('http://localhost:5000/api/issues',issue)
 
     return dispatch => {
         dispatch({type: POSTING_ISSUE});
@@ -33,9 +33,9 @@ export const postIssue = (issue) =>{
 export const deleteIssue = (id) => dispatch =>{
     dispatch({type: DELETING_ISSUE})
     axios
-        .delete('http://localhost:5000/api/login')
+        .delete(`http://localhost:5000/api/issues/${id}`)
         .then(()=>{
-            dispatch({DELETE_ISSUE, id})
+            dispatch({type:DELETE_ISSUE, id})
         })
         .catch( error =>{
             dispatch({type: ERROR, payload: error})

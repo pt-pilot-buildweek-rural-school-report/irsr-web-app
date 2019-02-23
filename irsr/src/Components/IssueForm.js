@@ -25,10 +25,11 @@ class IssueForm extends Component {
   };
   postIssueEvent = event => {
     event.preventDefault();
-    const { issue_name, issue_type, comments } = this.state;
-    const createIssue = { issue_name, issue_type, comments };
+    const { issue_name, issue_type, comments } = this.state.newIssue;
+    const {school_id, user_id} = this.props;
+    const createIssue = { issue_name, issue_type, comments, school_id, user_id };
     postIssue(createIssue);
-    this.setState({ issue_name: "", issue_type: "", comments: "", school_id: this.schoolId, user_id: this.userId });
+    this.setState({newIssue:{ issue_name: "", issue_type: "", comments: ""} });
   };
   render() {
     return (
@@ -90,8 +91,8 @@ class IssueForm extends Component {
 }
 const mapStateToProps = state => {
     return {
-      schoolId: state.school_id,
-      userId: state.user_id
+      school_id: state.school_id,
+      user_id: state.id
     };
   };
 

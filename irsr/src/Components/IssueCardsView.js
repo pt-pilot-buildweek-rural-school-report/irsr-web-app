@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { loginData } from "../actions/index";
+import { deleteIssue } from "../actions/index";
 
 class IssueCardsView extends Component {
   render() {
@@ -12,7 +12,7 @@ class IssueCardsView extends Component {
                     <h3>{issue.issue_name}</h3>
                     <h4>{issue.issue_type}</h4>
                     <p>{issue.comments}</p>
-                    
+                    <button onClick={()=>{this.props.deleteIssue(issue.id)}}>delte</button>
                 </div>
         })}
       </div>
@@ -29,5 +29,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { loginData }
+  { deleteIssue}
 )(IssueCardsView);
