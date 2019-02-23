@@ -32,7 +32,7 @@ class Nav extends Component {
             </div>
             <div className="navLinkWrapper">
               <i className="fas fa-th menuIcon" />
-              <Link to={"/home"}>Issues</Link>
+              <Link to={"/home/issues"}>Issues</Link>
             </div>
             <div className="navLinkWrapper">
               <i className="fas fa-pen-square menuIcon" />

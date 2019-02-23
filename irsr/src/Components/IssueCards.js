@@ -5,7 +5,7 @@ const IssueCards = (props) => {
         <div className = "issueCardsContainer">
 
             <h3>{props.issueName}</h3>
-            <p>{props.issueDetails}</p>
+            <p>{props.issues}</p>
 
         </div>
      );

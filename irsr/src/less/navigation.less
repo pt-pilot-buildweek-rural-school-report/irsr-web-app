@@ -54,35 +54,39 @@
                 color: white;
             }
         }
+        .barsButton{
+            display: none;
+    
+            .fa-bars{
+                color:#ebf0f0;
+                margin: auto;
+                
+            }
+    
+            @media @mobile{
+                display: inline-block;
+                background-color: #222629;
+                z-index: 1000;
+                border: none;
+                border-radius: 5px;
+                width: 25%;
+                margin: 25px;
+               
+            }
+        }
     }
     .menuIcon {
         position: relative;
         top: 54px;
     }
 
-    .barsButton{
-        display: none;
-
-        .fa-bars{
-            color:#ebf0f0;
-            margin: auto;
-        }
-
-        @media @mobile{
-            display: inline-block;
-            background-color: #222629;
-            z-index: 1000;
-            border: none;
-            border-radius: 5px;
-            width: 25%;
-            margin: 25px;
-           
-        }
-    }
+    
+   
     .toggled{
         display: flex;
     }
     .hidden{
         display: none;
     }
+
 }

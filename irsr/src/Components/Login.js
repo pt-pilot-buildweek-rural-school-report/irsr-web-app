@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import {connect} from 'react-redux';
+import { loginData } from '../actions';
 
 class Login extends Component {
   constructor() {
@@ -47,21 +49,24 @@ class Login extends Component {
         e.preventDefault()
 
         //const endpoint = `${process.env.REACT_APP_API_URL}/api/login`
-        const endpoint = 'https://irsr-api.herokuapp.com/api/login'
+        const endpoint = 'http://localhost:5000/api/login'
         axios
             .post(endpoint, this.state)
             .then(res => {
                 localStorage.setItem('jwt', res.data.token)
                 console.log(res.data.token)
                 axios.defaults.headers.common["Authorization"] = res.data.token
-                return axios.get(`https://irsr-api.herokuapp.com/api/users/${res.data.id}`)
+                return axios.get(`http://localhost:5000/api/users/${res.data.id}`)
             })
             .then(res=>{
-                console.log(res.data)
+				this.props.loginData(res.data)
+				console.log(res.data)
                 this.props.history.push('/home')
             })
             .catch(err => console.error(err))
-    }
+	}
+	
+	
 }
 
-export default Login
+export default connect(null,{loginData})(Login)
