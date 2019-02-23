@@ -19,19 +19,20 @@ class Nav extends Component {
   render() {
     return (
       <div className="navBarWrapper">
-        <button onClick={this.handleClick} className="barsButton">
+        <button onClick={this.handleClick} className={this.state.condition ? "BarsButton hidden" : "BarsButton"}>
           <i className="fas fa-bars" />
         </button>
         <nav className={this.state.condition ? "navBar toggled" : "navBar"}>
+          <button className = 'menuButton' onClick={this.handleClick}><i className="far fa-times-circle"></i></button>  
           <h2>International Rual School Report</h2>
           <div>
             <div className="navLinkWrapper">
               <i className="far fa-user menuIcon" />
-              <Link to={"/home/profile"}>Profile</Link>
+              <Link to={"/home"}>Profile</Link>
             </div>
             <div className="navLinkWrapper">
               <i className="fas fa-th menuIcon" />
-              <Link to={"/home"}>Issues</Link>
+              <Link to={"/home/issues"}>Issues</Link>
             </div>
             <div className="navLinkWrapper">
               <i className="fas fa-pen-square menuIcon" />

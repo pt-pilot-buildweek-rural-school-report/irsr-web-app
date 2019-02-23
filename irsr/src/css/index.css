@@ -159,6 +159,18 @@ code {
 @media (max-width: 500px) {
   .navBarWrapper .navBar {
     display: none;
+    width: 100%;
+    z-index: 5000;
+  }
+}
+.navBarWrapper .navBar .menuButton {
+  display: none;
+}
+@media (max-width: 500px) {
+  .navBarWrapper .navBar .menuButton {
+    display: inline-block;
+    border: none;
+    background-color: #222629;
   }
 }
 .navBarWrapper .navBar div {
@@ -192,19 +204,15 @@ code {
 .navBarWrapper .navBar a:hover {
   color: white;
 }
-.navBarWrapper .menuIcon {
-  position: relative;
-  top: 54px;
-}
-.navBarWrapper .barsButton {
+.navBarWrapper .navBar .barsButton {
   display: none;
 }
-.navBarWrapper .barsButton .fa-bars {
+.navBarWrapper .navBar .barsButton .fa-bars {
   color: #ebf0f0;
   margin: auto;
 }
 @media (max-width: 500px) {
-  .navBarWrapper .barsButton {
+  .navBarWrapper .navBar .barsButton {
     display: inline-block;
     background-color: #222629;
     z-index: 1000;
@@ -214,8 +222,15 @@ code {
     margin: 25px;
   }
 }
+.navBarWrapper .menuIcon {
+  position: relative;
+  top: 54px;
+}
 .navBarWrapper .toggled {
   display: flex;
+}
+.navBarWrapper .hidden {
+  display: none;
 }
 .formContainer {
   width: 75%;
@@ -277,6 +292,7 @@ code {
   justify-content: space-around;
   margin: auto;
   width: 75%;
+  z-index: 1;
 }
 .profileContainer .profilePicture {
   border-radius: 200px;
@@ -291,4 +307,9 @@ code {
   .profileContainer .profilePicture img {
     width: 100px;
   }
+}
+.issueCard {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
 }
