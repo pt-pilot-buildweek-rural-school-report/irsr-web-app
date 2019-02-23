@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { postIssue } from "../actions/index";
+import { connect } from 'react-redux';
 import "../css/index.css";
 
 class IssueForm extends Component {
@@ -27,7 +28,7 @@ class IssueForm extends Component {
     const { issue_name, issue_type, comments } = this.state;
     const createIssue = { issue_name, issue_type, comments };
     postIssue(createIssue);
-    this.setState({ issue_name: "", issue_type: "", comments: "" });
+    this.setState({ issue_name: "", issue_type: "", comments: "", school_id: this.schoolId, user_id: this.userId });
   };
   render() {
     return (
@@ -87,5 +88,11 @@ class IssueForm extends Component {
     );
   }
 }
+const mapStateToProps = state => {
+    return {
+      schoolId: state.school_id,
+      userId: state.user_id
+    };
+  };
 
-export default IssueForm;
+export default connect(mapStateToProps, { postIssue })(IssueForm);
