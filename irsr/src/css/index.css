@@ -314,6 +314,12 @@ code {
   justify-content: space-around;
   width: 70%;
 }
+@media (max-width: 500px) {
+  .issueCardContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
 .issueCardContainer .issueCard {
   border: 1px solid #222629;
   display: flex;
@@ -326,11 +332,24 @@ code {
   padding: 10px;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard {
+    width: 80%;
+    margin: 25px;
+    padding: 10px;
+    font-size: 10px;
+  }
+}
 .issueCardContainer .issueCard h3 {
   background-color: white;
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
+}
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard h3 {
+    margin: 2px auto;
+  }
 }
 .issueCardContainer .issueCard h4 {
   background-color: white;
@@ -338,11 +357,21 @@ code {
   margin: 5px;
   padding: 5px;
 }
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard h4 {
+    margin: 2px auto;
+  }
+}
 .issueCardContainer .issueCard p {
   background-color: white;
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
+}
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard p {
+    margin: 2px auto;
+  }
 }
 .issueCardContainer .issueCard button {
   width: 30%;
@@ -354,4 +383,10 @@ code {
   font-family: 'Roboto', sans-serif;
   font-size: 1.25vw;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .issueCardContainer .issueCard button {
+    margin: 2px auto;
+    font-size: 12px;
+  }
 }
