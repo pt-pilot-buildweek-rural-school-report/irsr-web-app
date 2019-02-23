@@ -6,8 +6,6 @@ import "../css/index.css";
 class IssueForm extends Component {
   state = {
     newIssue: {
-      name: "",
-      date: "",
       issue_name: "",
       issue_type: "",
       comments: ""
@@ -39,20 +37,7 @@ class IssueForm extends Component {
           type="submit"
           onSubmit={this.postIssueEvent}
         >
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            onChange={this.handleChange}
-            value={this.state.newIssue.name}
-          />
-          <input
-            type="text"
-            name="date"
-            placeholder="Date"
-            onChange={this.handleChange}
-            value={this.state.newIssue.date}
-          />
+         
 
           <input
             type="text"

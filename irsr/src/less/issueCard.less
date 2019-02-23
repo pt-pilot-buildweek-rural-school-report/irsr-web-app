@@ -1,8 +1,15 @@
-.issueCard{
-    border: 1px solid black;
+.issueCardContainer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 33%;
-    margin: 25px auto;
+    width: 70%;
+    .issueCard {
+        border: 1px solid #222629;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 33%;
+        margin: 25px auto;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
 }

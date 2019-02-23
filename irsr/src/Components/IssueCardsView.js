@@ -8,12 +8,22 @@ class IssueCardsView extends Component {
     return (
       <div>
         {this.props.issues.map(issue => {
-          return <div className = 'issueCard' key = {issue.id}>
-                    <h3>{issue.issue_name}</h3>
-                    <h4>{issue.issue_type}</h4>
-                    <p>{issue.comments}</p>
-                    <button onClick={()=>{this.props.deleteIssue(issue.id)}}>Delete</button>
-                </div>
+          return (
+            <div className="issueCardContainer">
+              <div className="issueCard" key={issue.id}>
+                <h3>{issue.issue_name}</h3>
+                <h4>{issue.issue_type}</h4>
+                <p>{issue.comments}</p>
+                <button
+                  onClick={() => {
+                    this.props.deleteIssue(issue.id);
+                  }}
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          );
         })}
       </div>
     );
@@ -29,5 +39,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { deleteIssue}
+  { deleteIssue }
 )(IssueCardsView);
