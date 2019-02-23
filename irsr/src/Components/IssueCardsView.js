@@ -12,7 +12,7 @@ class IssueCardsView extends Component {
                     <h3>{issue.issue_name}</h3>
                     <h4>{issue.issue_type}</h4>
                     <p>{issue.comments}</p>
-                    <button onClick={()=>{this.props.deleteIssue(issue.id)}}>delte</button>
+                    <button onClick={()=>{this.props.deleteIssue(issue.id)}}>Delete</button>
                 </div>
         })}
       </div>

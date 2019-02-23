@@ -26,7 +26,7 @@ class IssueForm extends Component {
   postIssueEvent = event => {
     event.preventDefault();
     const { issue_name, issue_type, comments } = this.state.newIssue;
-    const {school_id, user_id} = this.props;
+    const {school_id, user_id, postIssue} = this.props;
     const createIssue = { issue_name, issue_type, comments, school_id, user_id };
     postIssue(createIssue);
     this.setState({newIssue:{ issue_name: "", issue_type: "", comments: ""} });
