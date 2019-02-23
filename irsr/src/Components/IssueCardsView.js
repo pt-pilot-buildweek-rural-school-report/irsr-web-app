@@ -6,14 +6,14 @@ class IssueCardsView extends Component {
   render() {
     console.log(this.props.issues);
     return (
-      <div>
+        <div className="issueCardContainer">
         {this.props.issues.map(issue => {
           return (
-            <div className="issueCardContainer">
+            
               <div className="issueCard" key={issue.id}>
-                <h3>{issue.issue_name}</h3>
-                <h4>{issue.issue_type}</h4>
-                <p>{issue.comments}</p>
+                <h3>Issue Name: {issue.issue_name}</h3>
+                <h4>Issue Type: {issue.issue_type}</h4>
+                <p>Comments: {issue.comments}</p>
                 <button
                   onClick={() => {
                     this.props.deleteIssue(issue.id);
@@ -22,7 +22,7 @@ class IssueCardsView extends Component {
                   Delete
                 </button>
               </div>
-            </div>
+          
           );
         })}
       </div>
