@@ -14,7 +14,7 @@ export const loginData = (loginState) =>{
     }
 }
 export const postIssue = (issue) =>{
-    const newIssue = axios.post('http://localhost:5000/api/issues',issue)
+    const newIssue = axios.post(' https://irsr-api.herokuapp.com/api/issues',issue)
 
     return dispatch => {
         dispatch({type: POSTING_ISSUE});
@@ -33,7 +33,7 @@ export const postIssue = (issue) =>{
 export const deleteIssue = (id) => dispatch =>{
     dispatch({type: DELETING_ISSUE})
     axios
-        .delete(`http://localhost:5000/api/issues/${id}`)
+        .delete(` https://irsr-api.herokuapp.com/api/issues/${id}`)
         .then(()=>{
             dispatch({type:DELETE_ISSUE, id})
         })

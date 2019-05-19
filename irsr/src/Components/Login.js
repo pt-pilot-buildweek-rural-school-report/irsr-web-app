@@ -49,14 +49,14 @@ class Login extends Component {
         e.preventDefault()
 
         //const endpoint = `${process.env.REACT_APP_API_URL}/api/login`
-        const endpoint = 'http://localhost:5000/api/login'
+        const endpoint = ' https://irsr-api.herokuapp.com/api/login'
         axios
             .post(endpoint, this.state)
             .then(res => {
                 localStorage.setItem('jwt', res.data.token)
                 console.log(res.data.token)
                 axios.defaults.headers.common["Authorization"] = res.data.token
-                return axios.get(`http://localhost:5000/api/users/${res.data.id}`)
+                return axios.get(` https://irsr-api.herokuapp.com/api/users/${res.data.id}`)
             })
             .then(res=>{
 				this.props.loginData(res.data)
