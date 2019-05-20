@@ -1,0 +1,4 @@
+[build]
+base = "irsr/"
+publish = "irsr/build/"
+command = "yarn build"
